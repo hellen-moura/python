@@ -25,18 +25,18 @@ else:
 # impressas as seguintes mensagens:para validar uma senha fornecida pelo usuario. senha válida . deve ser impressas as seguintes
 # mensagens ACESSO PERMITIDO caso a senha seja válida; ACESSO NEGADO caso a senha seja inválida
 
-senha = int(input("Digite sua senha: "))
+'''senha = int(input("Digite sua senha: "))
 if senha == 1234 :
    print("ACESSO PERMITIDO")
 else:
-   print("ACESSO NEGADO")
+   print("ACESSO NEGADO")'''
 
 '''****************************************************************************************************************************************************************'''
 
 #4. As maças custam R$ 0.30 cada se forem compradaas menos do que uma dúzia, e R$ 0.25 se forem compradas pelo menos doze. Escreva
 # um programa que leia o número de maças compradas, calcule e escreva o valor total da compra
 
-macas = int(input("Digite quantas maças deseja comprar: "))
+'''macas = int(input("Digite quantas maças deseja comprar: "))
 
 valor_menor_duzia = 0.30
 valor_pelomenos_duzia = 0.25
@@ -47,7 +47,7 @@ if macas <12:
 else:
    valor_total = macas * valor_pelomenos_duzia
 
-print(f"O valor total da compra é R$ {valor_total:.2f}")
+print(f"O valor total da compra é R$ {valor_total:.2f}")'''
 
 '''.2f mostra duas casas decimais após a vírgula'''
 
@@ -55,7 +55,7 @@ print(f"O valor total da compra é R$ {valor_total:.2f}")
 
 #5. Escreva um programa para ler 3 valores inteiros (considere que não serão lidos valores iguais) e escrevê-los em ordem crescente.
 
-valor1 = int(input("Digite o primeiro valor inteiro: "))
+'''valor1 = int(input("Digite o primeiro valor inteiro: "))
 valor2 = int(input("Digite o segundo valor inteiro: "))
 valor3 = int(input("Digite o terceiro valor inteiro: "))
 
@@ -75,7 +75,7 @@ elif valor3 < valor2 < valor1:
 else:
    menor, meio, maior = valor3, valor1, valor2
 
-print(f"Os valores em ordem crescente são: {menor}, {meio} e {maior}")
+print(f"Os valores em ordem crescente são: {menor}, {meio} e {maior}")'''
 
 '''****************************************************************************************************************************************************************'''
 
@@ -83,23 +83,71 @@ print(f"Os valores em ordem crescente são: {menor}, {meio} e {maior}")
 # que calcule e imprima seu peso ideal, utilizando as seguintes fórmulas:
 #- para homens: (72.7*Altura) -58 -para mulheres; (62.1*Altura)-44.7
 
+'''altura = float(input("Digite sua altura: "))
+sexo = int(input("Digite o seu sexo (1. feminino 2. masculino): "))
 
+if sexo == 1:
+ peso_ideal = (62.1 * altura) - 44.7
+elif sexo == 2:
+ peso_ideal = (72.7 * altura) - 58
+else:
+ print("Opção inválida, digite 1 para feminino ou 2 para masculino ")
+
+print(f"O peso ideal para a altura de {altura:.2f} metros é aproximadamente {peso_ideal:.2f} kg.")'''
+
+'''****************************************************************************************************************************************************************'''
 
 #7. Escreva um programa para ler o número de lados de um polígono regular e a medida do lado (em cm). Calcular e imprimir o seguinte:
 #- Se o número de lados for igual a 3 escrever TRIÂNGULO e o valor da área
 #- Se o número de lados for igual a 4 escrever QUADRADO e o valor da área
 # Se o número de lados for igual a 5 escrever PENTÁGONO
 
+'''n_lados = int(input("Digite o número de lados do polígono regular: "))
+medida_cm = float(input("Digite a medida do lado (em cm): "))
+
+if n_lados == 3:
+ area = (medida_cm ** 2) * (3 ** 0.5) / 4
+print(f"TRIÂNGULO - Área: {area:.2f} cm²")
+
+elif n_lados == 4:
+area = medida_cm ** 2
+print(f"QUADRADO - Área: {area:.2f} cm²")
+
+elif n_lados == 5:
+area = (5 * medida_cm ** 2) / (4 * (5 ** 0.5))
+print(f" PENTÁGONO - Área: {area:.2f} cm²")
+
+else:
+    print("Insira um número de lados válido 3, 4 ou 5.")'''
+
+'''****************************************************************************************************************************************************************'''
+
 #8. Acrescente as seguintes mensagens à solução anterior conforme o caso.
 #-Caso o número de lados seja inferior a 3 escrever NÃO É UM POLÍGONO.
 #-Caso o número de lados seja superior a 5 escrever POLÍGONO NÃO IDENTIFICADO.
 
+
+
+
+
+'''****************************************************************************************************************************************************************'''
+
 #9. Escreva um programa para ler 3 valores inteiros e escrever o maior deles. Considere que o usuário não informará valores iguais
+
+
+
+'''****************************************************************************************************************************************************************'''
 
 #10. Escreva um programa que leia as medidas dos lados de um triângulo e escreva se ele é Equilátero, Isósceles ou Escaleno. Sendo que:
 #-Triângulo Equilátero: possui os 3 lados iguais
 #-Triângulo Isóscele: possui  2 lados iguais
 #-Triângulo Escaleno: possui os 3 lados diferentes
+
+
+
+
+'''****************************************************************************************************************************************************************'''
+
 
 #11. Escreva um programa que leia o valor de 3 ângulos de um triângulo e escreva se o triângulo é Acutângulo, Retângulo ou Obtusângulo. Sendo que:
 #Triangulo Retângulo: possui um ângulo reto (igual a 90º)
