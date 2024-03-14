@@ -103,10 +103,12 @@ if letra == 'a' or letra == 'e' or letra == 'i' or letra == 'o' or letra == 'u':
     print(f"{letra} é uma vogal")
 else:
     print(f"{letra} é uma consoante")
+
+
 nota = int(input("Diga sua nota: "))
 if nota >= 6:
     print("Aprovado")
-elif nota<6 and nota>=4:
+elif nota>=4:
     print("Exame")
 else:
     print("Reprovado")
