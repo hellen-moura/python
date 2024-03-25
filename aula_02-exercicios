@@ -185,7 +185,6 @@ if c < menor:
 meio = a + b + c - menor - maior
 print(menor,meio,maior)
 
-
 ############################################################
 
 
